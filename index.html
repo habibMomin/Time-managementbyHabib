@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Productivity Tracker</h1>
+        <p class="description">Track your activities and stay productive.</p>
+
+        <textarea id="input-text" placeholder="Enter your activity here..."></textarea>
+        <br>
+        <button id="save-btn">Save Activity</button>
+        <button id="reset-btn">Reset</button>
+        <button id="save-sheet-btn">Save to Storage</button>
+        <button id="download-pdf-btn">Download as PDF</button>
+
+        <table id="log-table">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div id="status"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
